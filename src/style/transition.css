@@ -1,0 +1,54 @@
+/*fade*/
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.8s;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+/* arrow up */
+@keyframes arrUp {
+    0% {
+        transform:translateY(10px); opacity:0;
+    }
+    100% {
+        transform:translateY(0); opacity:0.8;
+    }
+}
+
+/* gif */
+@keyframes gif {
+    0% {
+        background-position:0 0
+    }
+    100% {
+        background-position:-630px 0;
+    }
+}
+
+/* rotate */
+@keyframes rotate {
+    0% {
+
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+/* flash */
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
